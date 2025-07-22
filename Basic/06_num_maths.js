@@ -44,4 +44,5 @@ const formula = Math.random()* (max-min +1) + min
 console.log(formula)//15.258340149778022
 console.log(Math.floor(formula)) 
 
+
 ************************************************************/
