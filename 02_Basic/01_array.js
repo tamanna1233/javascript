@@ -89,7 +89,7 @@ const  allNames = names.concat(newNames) // concatenates newNames array to names
 
 //**********  spread operator   **********//
 const allNames2 = [...names,...newNames]
-console.log(allNames2)
+// console.log(allNames2)
 
 
 //************  flat *********** */
@@ -102,3 +102,13 @@ const nestedArray = [1, 2, [3, 4], [5, 6, [7, 8]]];
 //.isArray   
 //.from
 //of
+
+console.log(Array.isArray(nestedArray)) //true
+console.log(Array.from("TAMANNA")) //["T","A","M","A","N","N","A"] //convert into  array
+console.log(Array.from({name:"tamanna"})) //[]
+
+let score =100 
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score, score2, score3)) //[100, 200, 300]//creates an array from the arguments passed to it
