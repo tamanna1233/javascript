@@ -1,6 +1,6 @@
 // *************** switch case statement *************
 
-const month = 3
+const month = 4
 switch (month) {
     case 1:
         console.log('january');
@@ -25,6 +25,20 @@ switch (month) {
                             break
                             case 8: 
                             console.log("august")
+                            break;
+                            case 8: 
+                            console.log("september")
+                            break;
+                            case 8: 
+                            console.log("october")
+                            break;
+                            case 8: 
+                            console.log("november")
+                            break;
+                            case 8: 
+                            console.log("december")
+                            break;
+
         break;
 
     default:

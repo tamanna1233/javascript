@@ -54,6 +54,29 @@ const loggedInfrommail = true
 // console.log("allowed");
 }
 
-if(loggedInfrommail|| loggedInfromGoogle){ //anyone of the given is true
+if(loggedInfrommail || loggedInfromGoogle){ //anyone of the given is true
     // console.log("allowed");
     }
+
+
+    // nullish coalescing operator (??): null undefined
+    //
+
+    // let val1;
+    // val1 = 5 ?? 10 //5
+    // val1 = null ?? 10  //10
+    // val1 = undefined ?? 15  //15
+    // val1 = null ?? undefined ?? 20 //20
+
+    // console.log(val1);
+
+
+    //trnary oprator
+    // condition ? true : false
+
+    // const price = 100 
+    // price>50 ? console.log("greater than 50"): console.log("greater than 50"); //greater than 50
+    
+    
+
+    
