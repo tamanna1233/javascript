@@ -13,9 +13,11 @@
 const myNum = [ 1,2,3,4,5,6,7,8,9,10]
 const num = myNum.filter((num)=>{return num > 4})
 
-console.log(num);
+// console.log(num);
 
-//
+
+
+//example of filter
 
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
@@ -37,8 +39,19 @@ const books = [
 //   console.log(history);
 
 const publish = books.filter((item)=>(item.publish >= 2000))
-  console.log(publish);
+  // console.log(publish);
   
+  const edition = books.filter((item)=>(item.edition>=2000))
+  // console.log(edition);
+
+
+  const both = books.filter((item) => {
+    // console.log(item.genre, item.edition);
+    
+  return item.genre === "History" && item.edition >= 2000;
+});
+console.log(both);
+
   
 
 
