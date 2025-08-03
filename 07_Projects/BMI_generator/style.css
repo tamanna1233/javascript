@@ -1,0 +1,46 @@
+body{
+    background-color: thistle;
+}
+.main{
+    width:475px;
+    height: 550px;
+    background-color: darkseagreen;
+    padding-left: 30px;
+    margin: auto;
+    border:2px solid #25c71f
+}
+#height,#weight{
+    width: 150px;
+    height: 25px;
+    margin: auto;
+    margin-top: 30px;
+}
+.guide{
+    margin-left: 75px;
+    margin-top: 25px;
+}
+#result {
+  font-size: 35px;
+  margin-left: 90px;
+  margin-top: 20px;
+  color: rgb(241, 241, 241);
+}
+button {
+  width: 150px;
+  height: 35px;
+  margin-left: 90px;
+  margin-top: 25px;
+  background-color: #fff;
+  padding: 1px 30px;
+  border-radius: 8px;
+  color: #212121;
+  text-decoration: none;
+  border: 2px solid #212121;
+
+  font-size: 25px;
+}
+h1 {
+  padding-left: 15px;
+  padding-top: 25px;
+  
+}
