@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <card>
+        <h1></h1>
+        <img src= alt="">
+    </card>
+    
+</body>
+<script>
+    const reqUrl="https://api.github.com/users/hiteshchoudhary"
+ const xhr= new XMLHttpRequest()
+ xhr.open('GET',reqUrl)
+xhr.onreadystatechange=function(){
+//  console.log(xhr.readyState);
+//  if(xhr.readyState===4){
+    const user=JSON.parse(this.responseText)
+
+//     console.log(typeof user);
+//     console.log(user.followers);
+//     console.log(user.id);
+document.querySelector('h1').innerHTML=user.login
+document.querySelector("image ").innerHTML=user.avatar_url
+    
+    
+ }
+    
+// }
+ xhr.send()
+ 
+</script>
+</html>

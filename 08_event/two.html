@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> learn js from chai or code</h1>
+    <button>stop</button>
+</body>
+<script>
+
+
+    const changeText = function(){
+        document.querySelector('h1')
+        .innerHTML='best js series'
+    }
+    
+    const changeMe =setTimeout(changeText,2000)
+
+
+    // want to stop settimeout
+    document.querySelector('button').addEventListener('click',()=>{
+        console.log("timeout clear");
+        
+    clearTimeout(changeMe)
+
+    })
+
+
+
+
+</script>
+</html>

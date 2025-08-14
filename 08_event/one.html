@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    //  //not good
+    // document.getElementById('owl').onclick(alert("owl clicked"))
+
+
+    //best approach
+    // document.querySelector('#river').addEventListener('click',function(){
+    //     alert("river clicked")
+    // })
+
+
+//     document.querySelector('#river').addEventListener('click',function(e){
+// console.log(e);
+
+//     },false)
+
+    //types, timestamp, defaultprevented ,
+    //target, srcelement ,currenttarget
+    //clientX,ClientY,screenX,screenY
+    //altkey ,ctrlKey,Shift key, keycode
+
+
+    //propagation
+    //event Bubbling(bottom to top) & event capturing (top to bottom)
+    // default is event bubbling (false)
+
+//      document.querySelector('#images').addEventListener('click',function(e){
+// console.log('clicked inside the ul');
+
+//     },true)
+
+//      document.querySelector('#owl').addEventListener('click',function(e){
+// console.log('owl clicked ');
+
+//     },false)
+    //owl clicked
+    //clicked inside the url
+
+    // example of event capturing
+//     document.querySelector('#images').addEventListener('click',function(e){
+// console.log('clicked inside the ul');
+
+//     },true)
+// document.querySelector('#river').addEventListener('click',function(e){
+//     console.log('river clicked');
+    
+// },true)
+
+
+//want to stop bubbling
+  document.querySelector('#images').addEventListener('click',function(e){
+console.log('clicked inside the ul');
+
+    },false)
+document.querySelector('#river').addEventListener('click',function(e){
+    console.log('river clicked');
+e.stopPropagation()
+},false)
+    
+
+
+    </script>
+</html>

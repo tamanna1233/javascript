@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> learn js from chai or code</h1>
+    <button id="start">Start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+  const interval = function(){
+     intervalId =setInterval(()=>{
+    console.log('Best js series')
+},2000)
+  }
+
+ // start button
+    document.getElementById('start').addEventListener('click',function() {
+   interval()
+})
+
+
+//stop button
+document.getElementById('stop').addEventListener('click',function(){
+clearInterval(intervalId)
+})
+
+
+
+
+
+
+
+  
+
+
+
+
+</script>
+</html>
