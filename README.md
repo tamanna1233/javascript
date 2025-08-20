@@ -1,6 +1,10 @@
 # javascript
 code repository  for js
 
+i learned js from #chai or code by hitesh choudhary#
+https://github.com/hiteshchoudhary/js-hindi-youtube
+
+
 # javascript execution context
 
 every expression connverted into global execution contxt (this)
